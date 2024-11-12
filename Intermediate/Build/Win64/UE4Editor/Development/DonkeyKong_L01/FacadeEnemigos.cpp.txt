@@ -1,0 +1,19 @@
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Development\DonkeyKong_L01\Definitions.DonkeyKong_L01.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FacadeEnemigos.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Enemigo.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Enemigo.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FacadeEnemigos.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\EnemigoAnimalLobo.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\EnemigoAnimalLobo.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\EnemigoAnimalLeon.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\EnemigoAnimalLeon.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\EnemigoAnimalZorro.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\EnemigoAnimalZorro.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\EnemigoAnimalCocodrilo.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\EnemigoAnimalCocodrilo.generated.h

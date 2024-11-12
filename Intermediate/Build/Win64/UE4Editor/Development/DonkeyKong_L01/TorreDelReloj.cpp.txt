@@ -1,0 +1,7 @@
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Development\DonkeyKong_L01\Definitions.DonkeyKong_L01.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\TorreDelReloj.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Publicador.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Suscriptor.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Suscriptor.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Publicador.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\TorreDelReloj.generated.h

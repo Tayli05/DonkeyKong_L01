@@ -1,0 +1,7 @@
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Development\DonkeyKong_L01\Definitions.DonkeyKong_L01.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\AdapterProjectile.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\IAdapter.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\IAdapter.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\AdapterProjectile.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Projectile.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Projectile.generated.h

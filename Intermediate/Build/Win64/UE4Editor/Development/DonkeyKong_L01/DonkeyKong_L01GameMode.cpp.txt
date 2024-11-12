@@ -1,0 +1,75 @@
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Development\DonkeyKong_L01\Definitions.DonkeyKong_L01.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\DonkeyKong_L01GameMode.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\IDecorator.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\IDecorator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\DonkeyKong_L01GameMode.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\DonkeyKong_L01Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\DonkeyKong_L01Character.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FabricaBarriles.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Barril.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Barril.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FabricaBarriles.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FabricaBarrilesFlameantes.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FabricaBarrilesFlameantes.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FabricaBarrilesToxicos.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FabricaBarrilesToxicos.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FabricaEnemigos.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Enemigo.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Enemigo.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FabricaEnemigos.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FabricaEnemigosAnimales.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FabricaEnemigosAnimales.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FabricaEnemigosMisticos.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FabricaEnemigosMisticos.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FabricaEnemigosFantasia.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FabricaEnemigosFantasia.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Director.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Director.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Nv1Concreto.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\IConstructorN1.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\IConstructorN1.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Nv1Concreto.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\FacadeEnemigos.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\FacadeEnemigos.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\AdapterProjectile.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\IAdapter.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\IAdapter.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\AdapterProjectile.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Jugador.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Jugador.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Personaje.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Personaje.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\InvulnerabilidadD.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\DecoratorBase.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\DecoratorBase.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\InvulnerabilidadD.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\VelocidadExtra_D.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\VelocidadExtra_D.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\SaltoAltoD.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\SaltoAltoD.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Martillo.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\IEstrategiaMovimiento.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\IEstrategiaMovimiento.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Martillo.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\EstrategiaMovimientoHorizontal.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\EstrategiaMovimientoHorizontal.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\EstrategiaMovimientoAleatorio.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\EstrategiaMovimientoAleatorio.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\SujetoConcreto.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Sujeto.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\Observer.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Observer.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Sujeto.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\SujetoConcreto.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01\ObservadorConcreto.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\ObservadorConcreto.generated.h
