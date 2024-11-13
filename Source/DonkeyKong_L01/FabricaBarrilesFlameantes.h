@@ -28,6 +28,5 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	virtual ABarril* EncargarTipoBarril(FString _tipoBarril) override;
-
 	
 };

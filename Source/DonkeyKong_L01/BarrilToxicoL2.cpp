@@ -6,10 +6,10 @@
 ABarrilToxicoL2::ABarrilToxicoL2()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshAsset(TEXT("StaticMesh'/Game/Geometry/DonkeyKong/Donkey_Kong_Level_1_Barrel011.Donkey_Kong_Level_1_Barrel011'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshAsset(TEXT("StaticMesh'/Game/Geometry/DonkeyKong/Donkey_Kong_Level_1_Oil.Donkey_Kong_Level_1_Oil'"));
 	BarrilMesh->SetStaticMesh(MeshAsset.Object);
 	RootComponent = BarrilMesh;
-
+	SetActorScale3D(FVector(1.5f, 4.5f, 4.5f));
 
 	NombreBarril = "Toxico2";
 	Material = "Vidrio";

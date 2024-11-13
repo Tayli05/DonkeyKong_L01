@@ -13,26 +13,29 @@ AProjectile::AProjectile()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_NarrowCapsule.Shape_NarrowCapsule'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>ProjectileMeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
 	ProjectileMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh0"));
-	RootComponent = ProjectileMesh;
-	ProjectileMesh->SetRelativeScale3D(FVector(2.1f, 4.1f, 2.1f));
+	ProjectileMesh->SetStaticMesh(ProjectileMeshAsset.Object);
+	ProjectileMesh->SetupAttachment(RootComponent);
+	ProjectileMesh->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
+	//choque
+	ProjectileMesh->BodyInstance.SetCollisionProfileName("Projectile");
+	
+	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement0"));
+	ProjectileMovement->UpdatedComponent = ProjectileMesh;
+	ProjectileMovement->InitialSpeed = 300.f;
+	ProjectileMovement->MaxSpeed = 300.f;
+	ProjectileMovement->bRotationFollowsVelocity = true;
+	ProjectileMovement->bShouldBounce = false;
+	ProjectileMovement->ProjectileGravityScale = 0.f; // No gravity
+
+	// Die after 3 seconds by default
+	InitialLifeSpan = 10.0f;
 
 
 }
 
-void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
-{
 
-
-	// Only add impulse and destroy projectile if we hit a physics
-	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
-	{
-		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
-	}
-	Destroy();
-
-}
 
 // Called when the game starts or when spawned
 void AProjectile::BeginPlay()
@@ -48,11 +51,6 @@ void AProjectile::Tick(float DeltaTime)
 
 }
 
-void AProjectile::Disparar()
-{
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Magenta,
-		FString::Printf(TEXT("Disparando proyectil")));
-}
 
 void AProjectile::FireInDirection(const FVector& ShootDirection)
 {
@@ -60,4 +58,7 @@ void AProjectile::FireInDirection(const FVector& ShootDirection)
 	ProjectileMovement->Velocity = ShootDirection * ProjectileMovement->InitialSpeed;
 
 }
+
+
+
 

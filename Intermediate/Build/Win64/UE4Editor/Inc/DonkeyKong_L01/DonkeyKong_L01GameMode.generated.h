@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADonkeyKong_L01GameMode)
 
 
-#define DonkeyKong_L01_Source_DonkeyKong_L01_DonkeyKong_L01GameMode_h_14_PRIVATE_PROPERTY_OFFSET
+#define DonkeyKong_L01_Source_DonkeyKong_L01_DonkeyKong_L01GameMode_h_14_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__jugador() { return STRUCT_OFFSET(ADonkeyKong_L01GameMode, jugador); }
+
+
 #define DonkeyKong_L01_Source_DonkeyKong_L01_DonkeyKong_L01GameMode_h_11_PROLOG
 #define DonkeyKong_L01_Source_DonkeyKong_L01_DonkeyKong_L01GameMode_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

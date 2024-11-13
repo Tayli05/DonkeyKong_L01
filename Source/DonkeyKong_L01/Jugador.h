@@ -19,20 +19,25 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
 	UStaticMeshComponent* MeshJugador;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-public:
-	virtual void Cargar() override;
-
-	void setAdapter(AActor* _proyectil);
 
 private:
 
 	IIAdapter* adapter;
+
+public:
+	virtual void Cargar() override;
+
+	void setAdapter(AActor* AdapterObj);
+
+
+	float TiempoEntreProyectil;
+	float TiempoDisparo;
+	int HealthEnemis;
 
 };

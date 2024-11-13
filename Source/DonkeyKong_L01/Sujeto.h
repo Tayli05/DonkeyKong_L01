@@ -31,7 +31,6 @@ protected:
 
 	void AgregarObservador(IObserver* Observador);
 	void EliminarObservador(IObserver* Observador);
-
 	void NotificarObservadores();
 
 private:

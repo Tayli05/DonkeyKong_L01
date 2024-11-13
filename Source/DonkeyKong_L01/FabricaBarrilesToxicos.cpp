@@ -22,16 +22,14 @@ void AFabricaBarrilesToxicos::Tick(float DeltaTime)
 
 ABarril* AFabricaBarrilesToxicos::EncargarTipoBarril(FString _tipoBarril)
 {
-	FVector PosicionT = FVector(1206, 200, 600);
-	FRotator RotacionT = FRotator(90, 0, 0);
 
 	if (_tipoBarril == "Toxico1")
 	{
-		return GetWorld()->SpawnActor<ABarrilToxicoL1>(ABarrilToxicoL1::StaticClass(), PosicionT, RotacionT);
+		return GetWorld()->SpawnActor<ABarrilToxicoL1>(ABarrilToxicoL1::StaticClass(), FVector(1750, 700, 1870), FRotator(0,0,0));
 	}
 	else if (_tipoBarril == "Toxico2")
 	{
-		return GetWorld()->SpawnActor<ABarrilToxicoL2>(ABarrilToxicoL2::StaticClass(), PosicionT, RotacionT);
+		return GetWorld()->SpawnActor<ABarrilToxicoL2>(ABarrilToxicoL2::StaticClass(), FVector(1750,-2800,2910), FRotator(0, 0, 0));
 	}
 	else
 	{

@@ -8,7 +8,7 @@ ABarrilFlameanteL2::ABarrilFlameanteL2()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> BarrilMeshAsset(TEXT("StaticMesh'/Game/Geometry/DonkeyKong/Donkey_Kong_Level_1_Barrel003.Donkey_Kong_Level_1_Barrel003'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> BarrilMeshAsset(TEXT("StaticMesh'/Game/Geometry/DonkeyKong/Donkey_Kong_Level_1_Barrel004.Donkey_Kong_Level_1_Barrel004'"));
 	BarrilMesh->SetStaticMesh(BarrilMeshAsset.Object);
 	RootComponent = BarrilMesh;
 	BarrilMesh->SetWorldScale3D(FVector(3.5f, 3.5f, 3.5f));

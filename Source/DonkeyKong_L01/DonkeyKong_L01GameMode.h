@@ -30,8 +30,9 @@ protected:
 		class ANv1Concreto* nv1;
 		void ConstruirNv2();
 
+		UPROPERTY()
 		class AJugador* jugador;
-		class AAdapterProjectile* adapterProjectile;
+
 
 private:
 

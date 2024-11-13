@@ -36,7 +36,7 @@ void ANv1::EstablecerPlataformas(int32 num)
 	FVector posicionInicial = FVector(1300.0f, -1480.0f, -250.f);
 	FRotator rotacionInicial = FRotator(0.0f, 90.0f, 0.0f);
 	FTransform SpawnLocationCP;
-	float anchoComponentePlataforma = 300.0f;
+	float anchoComponentePlataforma = 350.0f;
 	float incrementoAltoComponentePlataforma = 55.0f;
 	float incrementoAltoEntrePisos = 250.0f;
 	float incrementoInicioPiso = 0.0f;
@@ -44,7 +44,7 @@ void ANv1::EstablecerPlataformas(int32 num)
 
 	switch (num) {
 	case 1:
-		for (int npp = 0; npp < 8; npp++) {
+		for (int npp = 0; npp < 7; npp++) {
 			rotacionInicial.Roll = rotacionInicial.Roll * -1;
 			incrementoAnchoComponentePlataforma = incrementoAnchoComponentePlataforma * -1;
 			SpawnLocationCP.SetRotation(FQuat(rotacionInicial));
@@ -154,7 +154,7 @@ void ANv1::EstablecerEscaleras(int32 num)
 	switch (num) {
 
 	case 4: {
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 3; i++) {
 			AEscalera* esc = GetWorld()->SpawnActor<AEscalera>(AEscalera::StaticClass(), SpawnLocationE);
 			esc->SetActorLocation(FVector(posicionInicialEscalera));
 			esc->SetActorRotation(FQuat(rotacionInicialEscalera));

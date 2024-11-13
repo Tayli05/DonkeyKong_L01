@@ -6,7 +6,7 @@
 AEnemigoAnimalLobo::AEnemigoAnimalLobo()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> EnemigoAnimalLoboMeshAsset(TEXT("StaticMesh'/Game/Geometry/Animales/untitled_fox_1.untitled_fox_1'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> EnemigoAnimalLoboMeshAsset(TEXT("StaticMesh'/Game/Geometry/Animales/untitled_wolf_2.untitled_wolf_2'"));
 	MeshEnemigo->SetStaticMesh(EnemigoAnimalLoboMeshAsset.Object);
 	RootComponent = MeshEnemigo;
 

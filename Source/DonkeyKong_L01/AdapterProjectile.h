@@ -25,13 +25,12 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-private:
-
-  AProjectile* projectile1;
-
 public:
+
+	AProjectile* proyectil;
 
 	virtual void Cargar() override;
 
 
+	
 };

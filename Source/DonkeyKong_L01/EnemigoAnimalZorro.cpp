@@ -7,7 +7,7 @@ AEnemigoAnimalZorro::AEnemigoAnimalZorro()
 {
 	PrimaryActorTick.bCanEverTick = true;
 	
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> EnemigoAnimalZorroMeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> EnemigoAnimalZorroMeshAsset(TEXT("StaticMesh'/Game/Geometry/Animales/untitled_fox_1.untitled_fox_1'"));
 	MeshEnemigo->SetStaticMesh(EnemigoAnimalZorroMeshAsset.Object);
 	RootComponent = MeshEnemigo;
 

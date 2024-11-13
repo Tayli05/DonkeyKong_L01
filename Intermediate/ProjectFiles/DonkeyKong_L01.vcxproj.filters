@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\DonkeyKong_L01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{00754E4E-B404-47F1-AED3-20B9E4A97998}</UniqueIdentifier>
+      <UniqueIdentifier>{C38BDB0E-D4CE-4B59-B26C-35090643DEE4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DonkeyKong_L01.Target.cs">
       <Filter>Source</Filter>
@@ -13,9 +13,8 @@
     </None>
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
-    <None Include="..\..\Temp.txt" />
     <Filter Include="Config">
-      <UniqueIdentifier>{4B1CAD63-24A3-4B67-8607-9EC70B141FC7}</UniqueIdentifier>
+      <UniqueIdentifier>{820E9D1D-3D39-44E2-90A9-8CAB8847DF09}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\DonkeyKong_L01">
-      <UniqueIdentifier>{AC5E98C0-6DA3-4CC7-AE1C-5FEA3D15DF31}</UniqueIdentifier>
+      <UniqueIdentifier>{170E2257-4537-4CC8-B4DC-30A2D18E4D06}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\DonkeyKong_L01\AdapterProjectile.cpp">
       <Filter>Source\DonkeyKong_L01</Filter>
@@ -77,12 +76,6 @@
     <ClInclude Include="..\..\Source\DonkeyKong_L01\DecoratorBase.h">
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\DonkeyKong_L01\DecoratorInvisible.cpp">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DonkeyKong_L01\DecoratorInvisible.h">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\DonkeyKong_L01\Director.cpp">
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClCompile>
@@ -122,24 +115,6 @@
     <ClInclude Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalCocodrilo.h">
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalCuervo.cpp">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalCuervo.h">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalElefante.cpp">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalElefante.h">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalHipopotamo.cpp">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalHipopotamo.h">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalLeon.cpp">
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClCompile>
@@ -150,18 +125,6 @@
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalLobo.h">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalRinoceronte.cpp">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalRinoceronte.h">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalZebra.cpp">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalZebra.h">
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\DonkeyKong_L01\EnemigoAnimalZorro.cpp">
@@ -378,6 +341,9 @@
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\DonkeyKong_L01\Obstaculos.h">
+      <Filter>Source\DonkeyKong_L01</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\DonkeyKong_L01\PersonaEspecial1.h">
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\DonkeyKong_L01\Personaje.cpp">

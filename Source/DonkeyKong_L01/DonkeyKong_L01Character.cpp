@@ -36,11 +36,15 @@ ADonkeyKong_L01Character::ADonkeyKong_L01Character()
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 720.0f, 0.0f); // ...at this rotation rate
 	GetCharacterMovement()->GravityScale = 2.f;
 	GetCharacterMovement()->AirControl = 0.80f;
-	GetCharacterMovement()->JumpZVelocity = 1200.f;// salto
+	GetCharacterMovement()->JumpZVelocity = 1100.f;// salto
 	GetCharacterMovement()->GroundFriction = 3.f;
 	GetCharacterMovement()->MaxWalkSpeed = 600.f;
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
 
+	
+	// Establecer la posición inicial del personaje
+	//SetActorLocation(FVector(1300.0f, -1480.0f, 4150.f));
+	
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }

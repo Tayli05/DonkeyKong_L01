@@ -6,10 +6,11 @@
 AEnemigoAnimalCocodrilo::AEnemigoAnimalCocodrilo()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> EnemigoMeshAsset(TEXT("StaticMesh'/Game/Geometry/Animales/untitled_alligator_1.untitled_alligator_1'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> EnemigoMeshAsset(TEXT("StaticMesh'/Game/Geometry/Animales/IA/Cocodrilo/a3ff5c9da3a5_cocodrilo__3d_asset.a3ff5c9da3a5_cocodrilo__3d_asset'"));
 	MeshEnemigo->SetStaticMesh(EnemigoMeshAsset.Object);
 	RootComponent = MeshEnemigo;
-	MeshEnemigo->SetWorldScale3D(FVector(0.1f, 0.1f, 0.1f));
+	MeshEnemigo->SetWorldScale3D(FVector(2.0f, 2.0f, 2.0f));
+
 
 }
 

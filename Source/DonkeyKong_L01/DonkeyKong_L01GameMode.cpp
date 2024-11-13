@@ -34,8 +34,6 @@
 #include "ObservadorConcreto.h"
 
 
-
-
 ADonkeyKong_L01GameMode::ADonkeyKong_L01GameMode()
 {
 	// set default pawn class to our Blueprinted character
@@ -51,12 +49,12 @@ void ADonkeyKong_L01GameMode::BeginPlay()
 
 	//fabricas de barriles -- Factory Method
 	AFabricaBarriles* FabricaFlameante = GetWorld()->SpawnActor<AFabricaBarrilesFlameantes>(AFabricaBarrilesFlameantes::StaticClass());
-	//FabricaFlameante->EncargarTipoBarril("Flameante1");
-	//FabricaFlameante->EncargarTipoBarril("Flameante2");
+	FabricaFlameante->EncargarTipoBarril("Flameante1");
+	FabricaFlameante->EncargarTipoBarril("Flameante2");
 
 	AFabricaBarriles* FabricaToxico = GetWorld()->SpawnActor<AFabricaBarrilesToxicos>(AFabricaBarrilesToxicos::StaticClass());
 	FabricaToxico->EncargarTipoBarril("Toxico1");
-	//FabricaToxico->EncargarTipoBarril("Toxico2");
+	FabricaToxico->EncargarTipoBarril("Toxico2");
 
 	//fabricas de enemigos -- Abstract Factory
 
@@ -66,24 +64,30 @@ void ADonkeyKong_L01GameMode::BeginPlay()
 	//fabricaEnemigos = NewObject<AFabricaEnemigosMisticos>();
 
 	AEnemigo* enemigoTerrestre01 = fabricaEnemigos->FabricarEnemigoTerrestre();
-
+	AEnemigo* enemigoAereo01 = fabricaEnemigos->FabricarEnemigoAereo();
+	AEnemigo* enemigoAcuatico01 = fabricaEnemigos->FabricarEnemigoAcuatico();
 	FTransform SpawnLocationEnemigo;
 	SpawnLocationEnemigo.SetLocation(FVector(1260.0f, 0.0f + float(FMath::RandRange(-500, 500)), 360.0f));
 	SpawnLocationEnemigo.SetRotation(FQuat(FRotator(0.0f, 0.0f, 0.0f)));
 
 	AEnemigo* enemigoSpawned = GetWorld()->SpawnActor<AEnemigo>(enemigoTerrestre01->GetClass(), SpawnLocationEnemigo);
+	AEnemigo* enemigoSpawned2 = GetWorld()->SpawnActor<AEnemigo>(enemigoAereo01->GetClass(), SpawnLocationEnemigo);
+	AEnemigo* enemigoSpawned3 = GetWorld()->SpawnActor<AEnemigo>(enemigoAcuatico01->GetClass(), SpawnLocationEnemigo);
+	enemigoSpawned3->SetActorLocation(FVector(1500.0f, 600, 260.0f));
+	enemigoSpawned3->SetActorRotation(FQuat(FRotator(0.0f, 90.0f, 0.0f)));
 
-	fabricaEnemigos = NewObject<AFabricaEnemigosFantasia>();
-	AEnemigo* enemigoTerrestre02 = fabricaEnemigos->FabricarEnemigoTerrestre();
 
-	SpawnLocationEnemigo.SetLocation(FVector(1860.0f, 0.0f + float(FMath::RandRange(-500, 500)), 360.0f));
-	GetWorld()->SpawnActor<AEnemigo>(enemigoTerrestre02->GetClass(), SpawnLocationEnemigo);
+	//fabricaEnemigos = NewObject<AFabricaEnemigosFantasia>();
+	//AEnemigo* enemigoTerrestre02 = fabricaEnemigos->FabricarEnemigoTerrestre();
 
-	fabricaEnemigos = NewObject<AFabricaEnemigosMisticos>();
-	AEnemigo* enemigoTerrestre03 = fabricaEnemigos->FabricarEnemigoTerrestre();
+	//SpawnLocationEnemigo.SetLocation(FVector(1860.0f, 0.0f + float(FMath::RandRange(-500, 500)), 360.0f));
+	//GetWorld()->SpawnActor<AEnemigo>(enemigoTerrestre02->GetClass(), SpawnLocationEnemigo);
 
-	SpawnLocationEnemigo.SetLocation(FVector(1860.0f, 0.0f + float(FMath::RandRange(-500, 500)), 360.0f));
-	GetWorld()->SpawnActor<AEnemigo>(enemigoTerrestre03->GetClass(), SpawnLocationEnemigo);
+	//fabricaEnemigos = NewObject<AFabricaEnemigosMisticos>();
+	//AEnemigo* enemigoTerrestre03 = fabricaEnemigos->FabricarEnemigoTerrestre();
+
+	//SpawnLocationEnemigo.SetLocation(FVector(1860.0f, 0.0f + float(FMath::RandRange(-500, 500)), 360.0f));
+	//GetWorld()->SpawnActor<AEnemigo>(enemigoTerrestre03->GetClass(), SpawnLocationEnemigo);
 
 	// Builder --creacion de plataformas, escaleras,obstaaculos
 	nv1 = GetWorld()->SpawnActor<ANv1Concreto>(ANv1Concreto::StaticClass());
@@ -91,8 +95,7 @@ void ADonkeyKong_L01GameMode::BeginPlay()
 
 	director->EstablecerTipoConstructor(nv1);
 	director->construir_nv1();
-	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ADonkeyKong_L01GameMode::ConstruirNv2, 20.0f, false);
-
+	
 	//Facade
 	AFacadeEnemigos* facade = GetWorld()->SpawnActor<AFacadeEnemigos>(AFacadeEnemigos::StaticClass());
 	facade->AparecerAnimal();
@@ -101,8 +104,11 @@ void ADonkeyKong_L01GameMode::BeginPlay()
 	facade->DesaparecerAnimal();
 
 	//Adapter
-	adapterProjectile = GetWorld()->SpawnActor<AAdapterProjectile>(AAdapterProjectile::StaticClass());
-	jugador = GetWorld()->SpawnActor<AJugador>(AJugador::StaticClass());
+	FVector SpawnLocation = FVector(1210.0f, -1440.0f, 900.0f); // Cambia estos valores a la posición deseada
+	FRotator SpawnRotation = FRotator(0.0f, 0.0f, 0.0f); // Define la rotación deseada (opcional)
+
+	AAdapterProjectile * adapterProjectile = GetWorld()->SpawnActor<AAdapterProjectile>(AAdapterProjectile::StaticClass());
+	jugador = GetWorld()->SpawnActor<AJugador>(AJugador::StaticClass(), SpawnLocation, SpawnRotation);
 	jugador->setAdapter(adapterProjectile);
 	jugador->Cargar();
 

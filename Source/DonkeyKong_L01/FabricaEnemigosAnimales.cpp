@@ -3,7 +3,7 @@
 
 #include "FabricaEnemigosAnimales.h"
 #include "EnemigoAnimalLeon.h"
-#include "EnemigoAnimalCuervo.h"
+#include "EnemigoAnimalLobo.h"
 #include "EnemigoAnimalCocodrilo.h"
 
 AFabricaEnemigosAnimales::AFabricaEnemigosAnimales()
@@ -29,7 +29,7 @@ AEnemigo* AFabricaEnemigosAnimales::FabricarEnemigoTerrestre()
 
 AEnemigo* AFabricaEnemigosAnimales::FabricarEnemigoAereo()
 {
-	return NewObject<AEnemigoAnimalCuervo>();
+	return NewObject<AEnemigoAnimalLobo>();
 }
 
 AEnemigo* AFabricaEnemigosAnimales::FabricarEnemigoAcuatico()

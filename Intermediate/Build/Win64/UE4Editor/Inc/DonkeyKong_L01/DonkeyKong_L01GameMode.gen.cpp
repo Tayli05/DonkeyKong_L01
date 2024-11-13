@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeDonkeyKong_L01GameMode() {}
 	DONKEYKONG_L01_API UClass* Z_Construct_UClass_ADonkeyKong_L01GameMode();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_DonkeyKong_L01();
+	DONKEYKONG_L01_API UClass* Z_Construct_UClass_AJugador_NoRegister();
 // End Cross Module References
 	void ADonkeyKong_L01GameMode::StaticRegisterNativesADonkeyKong_L01GameMode()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeDonkeyKong_L01GameMode() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_jugador_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_jugador;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +52,15 @@ void EmptyLinkFunctionForGeneratedCodeDonkeyKong_L01GameMode() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::NewProp_jugador_MetaData[] = {
+		{ "ModuleRelativePath", "DonkeyKong_L01GameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::NewProp_jugador = { "jugador", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADonkeyKong_L01GameMode, jugador), Z_Construct_UClass_AJugador_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::NewProp_jugador_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::NewProp_jugador_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::NewProp_jugador,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADonkeyKong_L01GameMode>::IsAbstract,
 	};
@@ -55,11 +70,11 @@ void EmptyLinkFunctionForGeneratedCodeDonkeyKong_L01GameMode() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::PropPointers),
 		0,
 		0x008802ACu,
 		METADATA_PARAMS(Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ADonkeyKong_L01GameMode_Statics::Class_MetaDataParams))
@@ -73,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeDonkeyKong_L01GameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADonkeyKong_L01GameMode, 2509672379);
+	IMPLEMENT_CLASS(ADonkeyKong_L01GameMode, 2149282580);
 	template<> DONKEYKONG_L01_API UClass* StaticClass<ADonkeyKong_L01GameMode>()
 	{
 		return ADonkeyKong_L01GameMode::StaticClass();

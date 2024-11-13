@@ -23,16 +23,19 @@ void AFabricaBarrilesFlameantes::Tick(float DeltaTime)
 
 ABarril* AFabricaBarrilesFlameantes::EncargarTipoBarril(FString _tipoBarril)
 {
-	FVector PosicionF = FVector(1206, 200, 400);
-	FRotator RotacionF = FRotator(90, 0, 0);
 	
+
 	if (_tipoBarril == "Flameante1")
 	{
-		return GetWorld()->SpawnActor<ABarrilFlameanteL1>(ABarrilFlameanteL1::StaticClass(), PosicionF, RotacionF);
+		return GetWorld()->SpawnActor<ABarrilFlameanteL1>(ABarrilFlameanteL1::StaticClass(), FVector(2670, 1100, 4950), FRotator(0, 0, 0));
+		
+		
 	}
 	else if (_tipoBarril == "Flameante2")
 	{
-		return GetWorld()->SpawnActor<ABarrilFlameanteL2>(ABarrilFlameanteL2::StaticClass(), PosicionF, RotacionF);
+	  return GetWorld()->SpawnActor<ABarrilFlameanteL2>(ABarrilFlameanteL2::StaticClass(), FVector(2670, 1100, 4950), FRotator(0, 0, 0));
+
+	
 	}
 	else
 	{
