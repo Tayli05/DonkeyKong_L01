@@ -9,6 +9,14 @@ APersonaje::APersonaje()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	ConstructorHelpers::FObjectFinder<UStaticMesh> MeshAsset(TEXT("StaticMesh'/Game/Geometry/Monkey/5e883dbf8708_monkey_animado_aero.5e883dbf8708_monkey_animado_aero'"));
+	MeshPersonaje = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PersonajeMesh"));
+	MeshPersonaje->SetStaticMesh(MeshAsset.Object);
+	RootComponent = MeshPersonaje;
+
+	SetActorScale3D(FVector(2.5f, 2.5f, 2.5f));
+
+
 }
 
 // Called when the game starts or when spawned
@@ -25,25 +33,30 @@ void APersonaje::Tick(float DeltaTime)
 
 }
 
-void APersonaje::Recoger()
+void APersonaje::Empezar()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Recoger")));
+		FString::Printf(TEXT("Personaje activado")));
 }
 
-int APersonaje::ObtenerPoder()
+FString APersonaje::Estado()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Obtener Poder")));
-	return 0;
+	
+	return " ";
 }
 
-void APersonaje::Morir()
+FString APersonaje::ObtenerAtributos()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Morir")));
+	return " ";
 
 }
+
+float APersonaje::Duracion()
+{
+	return 0.0f;
+
+}
+
 
 
 

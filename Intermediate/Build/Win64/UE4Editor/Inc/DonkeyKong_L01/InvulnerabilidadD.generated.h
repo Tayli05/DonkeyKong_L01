@@ -8,14 +8,23 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef DONKEYKONG_L01_InvulnerabilidadD_generated_h
 #error "InvulnerabilidadD.generated.h already included, missing '#pragma once' in InvulnerabilidadD.h"
 #endif
 #define DONKEYKONG_L01_InvulnerabilidadD_generated_h
 
 #define DonkeyKong_L01_Source_DonkeyKong_L01_InvulnerabilidadD_h_13_SPARSE_DATA
-#define DonkeyKong_L01_Source_DonkeyKong_L01_InvulnerabilidadD_h_13_RPC_WRAPPERS
-#define DonkeyKong_L01_Source_DonkeyKong_L01_InvulnerabilidadD_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define DonkeyKong_L01_Source_DonkeyKong_L01_InvulnerabilidadD_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
+#define DonkeyKong_L01_Source_DonkeyKong_L01_InvulnerabilidadD_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
 #define DonkeyKong_L01_Source_DonkeyKong_L01_InvulnerabilidadD_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAInvulnerabilidadD(); \

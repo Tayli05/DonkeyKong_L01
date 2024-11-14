@@ -9,6 +9,11 @@ AVelocidadExtra_D::AVelocidadExtra_D()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	VelocidadExtra = 600.0f;
+	DuracionVelocidadExtra = 5.0f;
+
+
+
 }
 
 // Called when the game starts or when spawned
@@ -23,26 +28,41 @@ void AVelocidadExtra_D::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-}
 
-void AVelocidadExtra_D::Recoger()
-{
-	Super::Recoger();
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Velocidad Extra")));
 
 }
 
-int AVelocidadExtra_D::ObtenerPoder()
+void AVelocidadExtra_D::Empezar()
 {
-	return Super::ObtenerPoder() + 5;
+
+
 }
 
-void AVelocidadExtra_D::Morir()
+
+FString AVelocidadExtra_D::Estado()
 {
-	Super::Morir();
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Morir con velocidad extra")));
+	estado = "Velocidad Extra";
+	return Super::Estado() + estado;
+
+}
+
+FString AVelocidadExtra_D::ObtenerAtributos()
+{
+	atributos = "Poder de Velocidad Extra";
+	return Super::ObtenerAtributos() + atributos;
+
+}
+
+float AVelocidadExtra_D::Duracion()
+{
+	return Super::Duracion() + DuracionVelocidadExtra;
+
+}
+
+void AVelocidadExtra_D::RestaurarVelocidad()
+{
+	bVelocidadExtraActiva = false;
+
 }
 
 

@@ -28,4 +28,24 @@ protected:
 
 	void Moverse() override;
 
+
+	bool bMoverHorizontalmente;
+	
+	FVector posicionInicio;
+	FVector posicionActual;
+	FVector posicionFinal;
+	
+	bool bDetener;
+	float velocidad;
+	FVector desplazamiento;
+	float ancho;
+	float alto;
+	float fondo;
+
+	bool bDeIzquierdaADerecha;
+	
+	FORCEINLINE void setbMoverHorizontalmente(bool _bMoverHorizontalmente) { bMoverHorizontalmente = _bMoverHorizontalmente; }
+
+	FORCEINLINE void setbDetener(bool _bDetener) { bDetener = _bDetener; }
+
 };

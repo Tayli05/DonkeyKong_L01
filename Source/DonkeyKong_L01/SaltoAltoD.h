@@ -26,9 +26,22 @@ public:
 
 public:
 
-	virtual void Recoger() override;
-	virtual int ObtenerPoder() override;
-	virtual void Morir() override;
+	void Empezar() override;
+	FString Estado() override;
+	FString ObtenerAtributos() override;
+	float Duracion() override;
 
+private:
+
+	void RestaurarSalto();
+
+	// Variables para manejar el estado del salto alto
+	bool bSaltoAltoActivo = false;
+	float FuerzaSaltoOriginal;
+	float FuerzaSaltoExtra = 1000.0f; // Ajusta este valor según la altura deseada
+	float DuracionSaltoAlto = 10.0f;  // Duración en segundos
+
+	// Temporizador para controlar la duración del salto alto
+	FTimerHandle TemporizadorSalto;
 
 };

@@ -38,6 +38,13 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\DonkeyKong_L01Character.generated.h
+E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/DonkeyKong_L01/DonkeyKong_L01GameMode.gen.cpp
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01/DonkeyKong_L01GameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\DonkeyKong_L01GameMode.generated.h
 E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/DonkeyKong_L01/Enemigo.gen.cpp
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01/Enemigo.h
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Enemigo.generated.h
@@ -121,9 +128,6 @@ E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/Don
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01/IEstablecedor.h
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\IEstablecedor.generated.h
 E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/DonkeyKong_L01/IEstrategiaMovimiento.gen.cpp
-E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/DonkeyKong_L01/InvulnerabilidadD.gen.cpp
-E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01/InvulnerabilidadD.h
-E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\InvulnerabilidadD.generated.h
 E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/DonkeyKong_L01/Jugador.gen.cpp
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01/Jugador.h
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Jugador.generated.h
@@ -157,6 +161,9 @@ E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\Don
 E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/DonkeyKong_L01/Plataforma.gen.cpp
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01/Plataforma.h
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Plataforma.generated.h
+E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/DonkeyKong_L01/Projectile.gen.cpp
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01/Projectile.h
+E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\Projectile.generated.h
 E:/LABORATORIOS_SIS457/DonkeyKong_L01/Intermediate/Build/Win64/UE4Editor/Inc/DonkeyKong_L01/SaltoAltoD.gen.cpp
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Source\DonkeyKong_L01/SaltoAltoD.h
 E:\LABORATORIOS_SIS457\DonkeyKong_L01\Intermediate\Build\Win64\UE4Editor\Inc\DonkeyKong_L01\SaltoAltoD.generated.h

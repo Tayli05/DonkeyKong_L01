@@ -27,8 +27,8 @@ void ADecoratorBase::Tick(float DeltaTime)
 
 void ADecoratorBase::SetPersonaje(AActor* _Personaje)
 {
-	Personaje= Cast<IIDecorator>(_Personaje);
-	if(!Personaje)
+	PersonajeDec= Cast<IIDecorator>(_Personaje);
+	if(!PersonajeDec)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Blue,
 			FString::Printf(TEXT("No se realizo la conversion a tipo Personaje")));
@@ -41,22 +41,68 @@ void ADecoratorBase::SetPersonaje(AActor* _Personaje)
 
 }
 
-void ADecoratorBase::Recoger()
+void ADecoratorBase::Empezar()
 {
+	if (!PersonajeDec) {
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Blue,
+			FString::Printf(TEXT("No se ha asignado el personaje")));
+		return ;
+	}
+	else {
 
+		PersonajeDec->Empezar();
+	}
+	
+}
+
+FString ADecoratorBase::Estado()
+{
+	if (!PersonajeDec)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Blue,
+			FString::Printf(TEXT("No se ha asignado el personaje")));
+
+		return "";
+	}
+	else
+	{
+		return PersonajeDec->Estado();
+	}
 
 }
 
-int ADecoratorBase::ObtenerPoder()
+FString ADecoratorBase::ObtenerAtributos()
 {
-	return 0;
+	if (!PersonajeDec)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Blue,
+			FString::Printf(TEXT("No se ha asignado el personaje")));
+
+		return "";
+	}
+	else
+	{
+		return PersonajeDec->ObtenerAtributos();
+	}
+}
+
+float ADecoratorBase::Duracion()
+{
+	if (!PersonajeDec)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Blue,
+			FString::Printf(TEXT("No se ha asignado el personaje")));
+
+		return 0.0f;
+	}
+	else
+	{
+		return PersonajeDec->Duracion();
+	}
 }
 
 
-void ADecoratorBase::Morir()
-{
 
-}
 
 
 

@@ -24,11 +24,23 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	void TerminarInvulnerabilidad();	
+	bool esInvulnerable = true;
+
+	UPROPERTY(EditAnywhere, Category = "Invulnerabilidad")
+	float DuracionInvulnerabilidad;
+
+	FTimerHandle TemporizadorInvulnerabilidad;
+
 public:
 
-	virtual void Recoger() override;
-	virtual int ObtenerPoder() override;
-	virtual void Morir() override;
+	
+	void Empezar() override;
+	FString Estado() override;
+	FString ObtenerAtributos() override;
+	float Duracion() override;
 
+	UFUNCTION()
+	void OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor);
 
 };

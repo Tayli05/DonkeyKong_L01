@@ -31,7 +31,7 @@ private:
 	IIAdapter* adapter;
 
 public:
-	virtual void Cargar() override;
+	void Cargar() override;
 
 	void setAdapter(AActor* AdapterObj);
 

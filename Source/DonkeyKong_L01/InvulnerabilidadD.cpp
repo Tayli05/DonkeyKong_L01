@@ -2,12 +2,17 @@
 
 
 #include "InvulnerabilidadD.h"
+#include "TimerManager.h"
+#include "Engine/World.h"
 
 // Sets default values
 AInvulnerabilidadD::AInvulnerabilidadD()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	DuracionInvulnerabilidad = 10.0f;
+	esInvulnerable = true;
 
 }
 
@@ -25,24 +30,48 @@ void AInvulnerabilidadD::Tick(float DeltaTime)
 
 }
 
-void AInvulnerabilidadD::Recoger()
+void AInvulnerabilidadD::TerminarInvulnerabilidad()
 {
-	Super::Recoger();
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Invulnerabilidad")));
-}
-
-int AInvulnerabilidadD::ObtenerPoder()
-{
-	return Super::ObtenerPoder() + 50;
+	esInvulnerable = false;
 
 }
 
-void AInvulnerabilidadD::Morir()
+void AInvulnerabilidadD::Empezar()
 {
-	Super::Morir();
+	GetWorld()->GetTimerManager().SetTimer(TemporizadorInvulnerabilidad, this, &AInvulnerabilidadD::TerminarInvulnerabilidad, DuracionInvulnerabilidad, false);
+	
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Morir con invulnerabilidad")));
+		FString::Printf(TEXT("Invulnerabilidad activada")));
+
+
+}
+
+FString AInvulnerabilidadD::Estado()
+{
+	
+	estado = "Invulnerable";
+	return Super::Estado() + estado;
+}
+
+FString AInvulnerabilidadD::ObtenerAtributos()
+{
+	atributos = "Poder de invulnerable";
+	return Super::ObtenerAtributos() + atributos;
+
+}
+
+float AInvulnerabilidadD::Duracion()
+{
+	return Super::Duracion() + 10.0f;
+
+}
+
+void AInvulnerabilidadD::OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor)
+{
+	if (OtherActor->ActorHasTag("Personaje"))
+	{
+		Empezar();
+	}
 
 }
 

@@ -25,27 +25,45 @@ void ASaltoAltoD::Tick(float DeltaTime)
 
 }
 
-void ASaltoAltoD::Recoger()
+void ASaltoAltoD::Empezar()
 {
-	Super::Recoger();
+	
+	bSaltoAltoActivo = true;
+
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Salto Alto")));
+		FString::Printf(TEXT("Salto Alto Activado")));
+	
 
 }
 
-int ASaltoAltoD::ObtenerPoder()
+FString ASaltoAltoD::Estado()
 {
-	return Super::ObtenerPoder() + 15;
+	estado = "Salto Alto";
+	return Super::Estado() + estado;
+
 }
 
-
-
-void ASaltoAltoD::Morir()
+FString ASaltoAltoD::ObtenerAtributos()
 {
-	Super::Morir();
+	atributos = " Poder de Salto Alto";
+	return Super::ObtenerAtributos() + atributos;
+	
+}
+
+float ASaltoAltoD::Duracion()
+{
+
+	return Super::Duracion() + 10.0f;
+}
+
+void ASaltoAltoD::RestaurarSalto()
+{
+	bSaltoAltoActivo = false;
+
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green,
-		FString::Printf(TEXT("Morir con salto alto")));
+		FString::Printf(TEXT("Salto Alto Restaurado")));
 }
+
 
 
 

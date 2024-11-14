@@ -104,7 +104,7 @@ void ADonkeyKong_L01GameMode::BeginPlay()
 	facade->DesaparecerAnimal();
 
 	//Adapter
-	FVector SpawnLocation = FVector(1210.0f, -1440.0f, 900.0f); // Cambia estos valores a la posición deseada
+	FVector SpawnLocation = FVector(1010.0f, -1440.0f, 900.0f); // Cambia estos valores a la posición deseada
 	FRotator SpawnRotation = FRotator(0.0f, 0.0f, 0.0f); // Define la rotación deseada (opcional)
 
 	AAdapterProjectile * adapterProjectile = GetWorld()->SpawnActor<AAdapterProjectile>(AAdapterProjectile::StaticClass());
@@ -112,37 +112,56 @@ void ADonkeyKong_L01GameMode::BeginPlay()
 	jugador->setAdapter(adapterProjectile);
 	jugador->Cargar();
 
-	//Decorator PowerUps
-	APersonaje* personaje = GetWorld()->SpawnActor<APersonaje>(APersonaje::StaticClass());
+	//Decorator P
+	FVector Pers = FVector(1620.0f, -1260.0f, 220.0f); // Cambia estos valores a la posición deseada
+	APersonaje* personaje = GetWorld()->SpawnActor<APersonaje>(APersonaje::StaticClass(), Pers,FRotator::ZeroRotator);
+	
 	AInvulnerabilidadD* invulnerabilidad = GetWorld()->SpawnActor<AInvulnerabilidadD>(AInvulnerabilidadD::StaticClass());
 	invulnerabilidad->SetPersonaje(personaje);
-	invulnerabilidad->Recoger();
-	invulnerabilidad->ObtenerPoder();
-	invulnerabilidad->Morir();
+	Personaje = invulnerabilidad;
+	Personaje->Empezar();
 
+	GEngine-> AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Jugador ahora esta en %s"), *Personaje->Estado()));
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Jugador ahora tiene los atributos de %s"), *Personaje->ObtenerAtributos()));
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Su duracion es de %.2f"), Personaje->Duracion()));
+
+	//Decorator V
 	AVelocidadExtra_D* velocidadExtra = GetWorld()->SpawnActor<AVelocidadExtra_D>(AVelocidadExtra_D::StaticClass());
 	velocidadExtra->SetPersonaje(personaje);
-	velocidadExtra->Recoger();
-	velocidadExtra->ObtenerPoder();
-	velocidadExtra->Morir();
-
+	Personaje = velocidadExtra;
+	Personaje->Empezar();
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Jugador ahora esta en %s"), *Personaje->Estado()));
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Jugador ahora tiene los atributos de %s"), *Personaje->ObtenerAtributos()));
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Su duracion es de %.2f"), Personaje->Duracion()));
+		
+	//Decorator S
 	ASaltoAltoD* saltoAlto = GetWorld()->SpawnActor<ASaltoAltoD>(ASaltoAltoD::StaticClass());
 	saltoAlto->SetPersonaje(personaje);
-	saltoAlto->Recoger();
-	saltoAlto->ObtenerPoder();
-	saltoAlto->Morir();
+	Personaje = saltoAlto;
+	Personaje->Empezar();
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Jugador ahora esta en %s"), *Personaje->Estado()));
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Jugador ahora tiene los atributos de %s"), *Personaje->ObtenerAtributos()));
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan,
+		FString::Printf(TEXT("Su duracion es de %.2f"), Personaje->Duracion()));
+
 
 	//Strategy
+	FVector SpawnLocationMartillo = FVector(2520.0f, -1000.0f, 480.0f); // Cambia estos valores a la posición deseada
+	FRotator SpawnRotationMartillo = FRotator(0.0f, 0.0f, 0.0f); // Define la rotación deseada (opcional)
 
-	AMartillo* martillo = GetWorld()->SpawnActor<AMartillo>(AMartillo::StaticClass());
-
-	AEstrategiaMovimientoAleatorio* MovimientoAleatorio = GetWorld()->SpawnActor<AEstrategiaMovimientoAleatorio>(AEstrategiaMovimientoAleatorio::StaticClass());
-	martillo->AlterarMovimientos(MovimientoAleatorio);
-	martillo->Emplear();
-
+	AMartillo* martillo = GetWorld()->SpawnActor<AMartillo>(AMartillo::StaticClass(), SpawnLocationMartillo, SpawnRotationMartillo);
 	AEstrategiaMovimientoHorizontal* MovimientoHorizontal = GetWorld()->SpawnActor<AEstrategiaMovimientoHorizontal>(AEstrategiaMovimientoHorizontal::StaticClass());
 	martillo->AlterarMovimientos(MovimientoHorizontal);
 	martillo->Emplear();
+
 
 	//Observer
 

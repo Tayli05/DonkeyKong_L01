@@ -23,9 +23,10 @@ class DONKEYKONG_L01_API IIDecorator
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 
-	virtual void Recoger() = 0;
-	virtual int ObtenerPoder() = 0;
-	virtual void Morir() = 0;
+	virtual void Empezar() = 0;
+	virtual FString Estado() = 0;
+	virtual FString ObtenerAtributos() = 0;
+	virtual float Duracion() = 0;
 
 
 };

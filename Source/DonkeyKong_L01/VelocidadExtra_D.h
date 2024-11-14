@@ -26,9 +26,22 @@ public:
 
 public:
 
-	virtual void Recoger() override;
-	virtual int ObtenerPoder() override;
-	virtual void Morir() override;
+	void Empezar() override;
+	FString Estado() override;
+	FString ObtenerAtributos() override;
+	float Duracion() override;
 
+private:
+
+	void RestaurarVelocidad();
+
+	// Variables para manejar el estado de velocidad extra
+	bool bVelocidadExtraActiva = false;
+	float VelocidadExtra;
+	float VelocidadOriginal;
+	float DuracionVelocidadExtra;
+
+	// Temporizador para controlar la duración de la velocidad extra
+	FTimerHandle TemporizadorVelocidad;
 
 };

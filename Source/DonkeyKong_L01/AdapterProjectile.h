@@ -28,8 +28,7 @@ public:
 public:
 
 	AProjectile* proyectil;
-
-	virtual void Cargar() override;
+	void Cargar() override;
 
 
 	

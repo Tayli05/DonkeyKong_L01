@@ -20,15 +20,18 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UStaticMeshComponent* MeshPersonaje;
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 public:
 
-	virtual void Recoger() override;
-	virtual int ObtenerPoder() override;
-	virtual void Morir() override;
+	void Empezar() override;
+	FString Estado() override;
+	FString ObtenerAtributos() override;
+	float Duracion() override;
+
 
 
 };

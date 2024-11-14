@@ -25,20 +25,21 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
-	IIDecorator* Personaje;
+	IIDecorator* PersonajeDec;
 
 protected:
+
 	FString estado;
-	FString poder;
+	FString atributos;
 
 public:
 
 	void SetPersonaje(AActor* _Personaje);
 
-	virtual void Recoger() override;
-	virtual int ObtenerPoder() override;
-	virtual void Morir() override;
-
-		
+	void Empezar() override;
+	 FString Estado() override;
+	 FString ObtenerAtributos() override;
+	 float Duracion() override;
+	
 
 };

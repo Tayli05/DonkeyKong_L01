@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\DonkeyKong_L01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C38BDB0E-D4CE-4B59-B26C-35090643DEE4}</UniqueIdentifier>
+      <UniqueIdentifier>{5BB48CA8-D46A-4279-BE12-433D6E228491}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DonkeyKong_L01.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{820E9D1D-3D39-44E2-90A9-8CAB8847DF09}</UniqueIdentifier>
+      <UniqueIdentifier>{58A98FEE-C1F1-4D36-8DA5-76D313CF079F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\DonkeyKong_L01">
-      <UniqueIdentifier>{170E2257-4537-4CC8-B4DC-30A2D18E4D06}</UniqueIdentifier>
+      <UniqueIdentifier>{54A5BBA8-35F5-4168-B40E-D58D52C1997B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\DonkeyKong_L01\AdapterProjectile.cpp">
       <Filter>Source\DonkeyKong_L01</Filter>
@@ -329,12 +329,6 @@
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\DonkeyKong_L01\Observer.h">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DonkeyKong_L01\Obstaculo.cpp">
-      <Filter>Source\DonkeyKong_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DonkeyKong_L01\Obstaculo.h">
       <Filter>Source\DonkeyKong_L01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\DonkeyKong_L01\Obstaculos.cpp">
